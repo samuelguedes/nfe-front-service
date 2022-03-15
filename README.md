@@ -1,27 +1,23 @@
-# NfeFrontService
+# nfe-front-service - Aplicação responsável pela a interface do sistema de notas fiscais.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.29.
+O projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 8.3.29.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+rodar `ng serve` para desenv. Navegar para `http://localhost:4200/`. O aplicativo atualiza automatico para qualque alteração no código fonte dos arquivos.
 
-## Code scaffolding
+## Contruir
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Execute `ng build` para compilar o projeto. Os artefatos de construção serão armazenados no diretório `dist/`. Use o sinalizador `--prod` para uma compilação de produção.
 
-## Build
+## Executando testes de unidade
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Execute `ng test` para executar os testes de unidade via [Karma](https://karma-runner.github.io).
 
-## Running unit tests
+## Executando testes de ponta a ponta
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Execute `ng e2e` para executar os testes de ponta a ponta via [Protractor](http://www.protractortest.org/).
 
-## Running end-to-end tests
+## Mais ajuda
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Para obter mais ajuda sobre a CLI Angular, use `ng help` ou confira o [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

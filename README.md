@@ -1,4 +1,4 @@
-# nfe-front-service - Aplicação responsável pela a interface do sistema de notas fiscais.
+# nfe-front-service - Aplicação responsável pela a interface do sistema de notas fiscais eletrônicas.
 
 O projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 8.3.29.
 

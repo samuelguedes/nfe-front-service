@@ -4,7 +4,11 @@ O projeto foi gerado com [Angular CLI](https://github.com/angular/angular-cli) v
 
 ## Development server
 
-rodar `ng serve` para desenv. Navegar para ```shell scripthttp://localhost:4000/nfe```. O aplicativo atualiza automatico para qualque alteração no código fonte dos arquivos.
+rodar `ng serve` para desenv. Navegar para:
+```shell 
+http://localhost:4000/nfe
+```
+O aplicativo atualiza automatico para qualque alteração no código fonte dos arquivos.
 
 ## Contruir
 

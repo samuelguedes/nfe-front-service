@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  URL_BACKEND_NFE_PROCESS_SERVICE: 'http://localhost:2000/nfe-process-service/api',
+  URL_BACKEND_NFE_UPLOAD_SERVICE: 'http://localhost:3000/nfe-upload-service/api'
 };
 
 /*

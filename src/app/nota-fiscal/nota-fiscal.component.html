@@ -1,1 +1,38 @@
-<p>nota-fiscal works!</p>
+<p-panel>
+  <p-header>
+      <div class="ui-helper-clearfix">
+          <span class="ui-panel-title" style="font-size:16px;display:inline-block;margin-top:2px">NFe - Nota Fisca Eletrônica</span>
+          
+      </div>
+  </p-header>
+  <p-table #dt [value]="notasFiscais" [paginator]="true" [rows]="10">
+    <ng-template pTemplate="header">
+        <tr>
+          <th scope="col" [width]="150" pSortableColumn="dataHoraRegistro">Data Registro<p-sortIcon field="dataHoraRegistro"></p-sortIcon></th>
+          <th scope="col" [width]="150" pSortableColumn="nomeArquivo">Arquivo<p-sortIcon field="nomeArquivo"></p-sortIcon></th>
+          <th scope="col" [width]="380" pSortableColumn="chave">Chave<p-sortIcon field="chave"></p-sortIcon></th>
+          <th scope="col" pSortableColumn="nomeEmitente">Nome Emitente<p-sortIcon field="nomeEmitente"></p-sortIcon></th>
+          <th scope="col" pSortableColumn="nomeDestinatario">Nome Destinatário<p-sortIcon field="nomeDestinatario"></p-sortIcon></th>
+          <th scope="col" [width]="200" pSortableColumn="valor">Valor<p-sortIcon field="valor"></p-sortIcon></th>
+          <th scope="col" [width]="180" pSortableColumn="descricaoStatus">Status<p-sortIcon field="descricaoStatus"></p-sortIcon></th>
+          <th scope="col" [width]="240">Ações</th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-notaFiscal>
+        <tr>
+          <td>{{ notaFiscal?.dataHoraRegistro }}</td>
+          <td>{{ notaFiscal?.nomeArquivo }}</td>
+          <td>{{ notaFiscal?.chave }}</td>
+          <td>{{ notaFiscal?.nomeEmitente }}</td>
+          <td>{{ notaFiscal?.nomeDestinatario }}</td>
+          <td>{{ notaFiscal?.valor }}</td>
+          <td>{{ notaFiscal?.descricaoStatus }}</td>
+          <td>
+            <p-button label="Duplicatas" (click)="voltar()" styleClass="ui-button-raised ui-button-secondary"></p-button>
+            <p-button label="Remover" (click)="remover(notaFiscal.id)" styleClass="ui-button-raised ui-button-secondary"></p-button>
+          </td>
+        </tr>
+    </ng-template>
+  </p-table>
+</p-panel>
+

@@ -1,0 +1,15 @@
+td {
+    text-align: center;
+}
+
+button.ui-button-rounded {
+    margin-left: 10px;
+}
+
+.ui-panel .ui-panel-titlebar {
+    min-height: 200px !important;
+}
+
+.ui-panel .ui-panel-content {
+    min-height: 400px !important;
+}
